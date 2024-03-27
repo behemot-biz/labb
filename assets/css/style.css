@@ -84,6 +84,7 @@ nav {
 .nav-toggle-label {
     font-size: 2rem;
 }
+
 /* main */
 main {
     /* make main element fill all surplus space to push footer down */
@@ -94,6 +95,10 @@ main {
     display: flex;
     flex-direction: column;
     background-color: #fffbf6;
+    padding-bottom: 20px;
+}
+.text{
+    padding: 20px;
 }
 /* hero */
 
@@ -136,24 +141,28 @@ main {
 #intro-bokashi {
    
    /*  height: 800px;  temp height */
-    margin: 0 20px auto;
+    /* margin: 0 20px auto; */
+    padding: 20px;
+    
+}
+#intro {
     padding: 20px;
 }
 
-.green-box {
+#green-box {
     background-color: rgb(7, 43, 7);
     color: #fffbf6;
     /* color: blanchedalmond;  */
-    margin:  0 20px;
+    /* margin:  0 20px; */
     padding: 20px;
     border-radius: 10px;
 }
-.green-box h2 {
+#green-box h2 {
     color: #fffbf6;
     /* color: blanchedalmond;  */
 }
-.green-box ul {
-    padding-left: 20px;
+#green-box ul {
+    padding: 0 0 10px 20px;
 }
 /* Footer */
 #social-networks {
@@ -171,4 +180,59 @@ main {
     font-size: 160%;
     padding: 5%;
 
+}
+
+
+@media screen and (min-width: 768px) {
+   #hero {
+    height: 50vh;
+    max-height: 300px;
+    width: 100%;
+    background: url(../img/rhubarb-cabage.webp) no-repeat left bottom / cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   #intro-bokashi {
+   
+   /*  height: 800px;  temp height */
+    /* margin: 0 20px auto; */
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+    .intro-flex {
+        /* max-width: 90%;
+        margin: 0 auto; */
+        display: flex;
+        gap: 1rem;
+    }
+    #intro {
+        
+        flex: 1;
+    }
+    #green-box {
+        flex: 1;
+    }
+   
+}
+@media screen and (min-width: 992px){
+    #intro-bokashi {
+   
+   /*  height: 800px;  temp height */
+    /* margin: 0 20px auto; */
+    max-width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+    /* .intro-flex {
+        width: 80%;
+        max-width: 1000px;
+        
+    } */
 }
